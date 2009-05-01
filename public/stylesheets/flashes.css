@@ -1,0 +1,22 @@
+/*- flashes */
+.message-list {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.message-list li {
+  padding: 2px 5px;
+}
+
+.notice {
+  background-color: #FFFCAA;
+}
+.error { 
+  border: 1px solid #CC0000;
+  background-color: #FFCCCC;
+}
+
+.info { 
+  border: 1px solid #88CC88;
+}

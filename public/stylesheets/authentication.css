@@ -1,0 +1,131 @@
+body, html {
+  height: 100%;
+}
+
+html {
+  background: #6D8EBD url(/images/authentication/bg.jpg) 50% 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font: 11px Lucida Grande, Lucida Sans Unicode, sans-serif;
+}
+
+body {
+  padding: 0;
+}
+
+/*- header */
+#header, #title, #title h1 {
+  height: 36px;
+}
+
+#header {
+  background: white url(/images/top/menu-bg.png) repeat-x;
+}
+
+#title {
+  float: left;
+  padding-left: 4px;
+  background: url(/images/top/name-bg.png) repeat-x;
+}
+
+#title h1 {
+  color: white;
+  padding: 2px 50px 0 10px;
+  margin: 0;
+  background: url(/images/top/name-menu-split.png) top right no-repeat;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+* html #title h1 { width: 1px; } /* ie is teh suxx0r */
+
+/*- base */
+h1, h2 { 
+  font-weight: normal;
+}
+
+h2 { 
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+form { 
+  margin: 0;
+}
+
+th { 
+  padding-right: 8px;
+}
+
+input.submit { 
+  padding: 0 2em;
+  margin-top: 3px;
+}
+
+/*- centered content */
+#outer-center-hack { width: 369px; height: 600px; overflow: hidden; position: relative; margin: 0 auto; }
+#outer-center-hack[id] { display: table; position: static; }
+#outer-center-hack {height: 100%; overflow: visible;} /* or without overflow */
+
+#middle-center-hack { position: absolute; top: 50%; }  /* for explorer only*/
+#middle-center-hack[id] { display: table-cell; vertical-align: middle; position: static; }
+
+#inner-center-hack {
+  position: relative;
+  top: -50%;
+}
+/* optional: #inner-center-hack[id] {position: static;} */
+
+html>body #shadow-top {
+  background: url(/images/authentication/top.png) no-repeat;
+  height: 80px;
+}
+
+#shadow-middle { 
+  padding: 0 36px;
+}
+html>body #shadow-middle {
+  background: url(/images/authentication/middle.png) repeat-y;
+}
+
+html>body #shadow-bottom {
+  background: url(/images/authentication/bottom.png) no-repeat;
+  height: 83px
+}
+
+html>body #content {
+  float: left;
+  margin-top: -49px;
+  margin-bottom: -40px;
+}
+
+/*- login */
+#login {
+  width: 257px;
+  background: white;
+  padding: 0 20px 16px 20px;
+}
+
+#login_username, #login_password { 
+  width: 185px;
+}
+
+/*- hacks */
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
