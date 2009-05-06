@@ -40,4 +40,4 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 
-Version = '1.0.2'
+Version = '1.0.4'
